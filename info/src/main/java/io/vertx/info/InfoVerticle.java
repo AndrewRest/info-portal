@@ -23,7 +23,7 @@ public class InfoVerticle extends AbstractVerticle {
             WebClient client = WebClient.create(vertx);
             
             client
-                .get(8080, "localhost", weatherService)
+                .get(8080, "weather", weatherService)
                 .as(BodyCodec.json(Weather.class))
                 .send(ar -> {
                     if (ar.succeeded()) {

@@ -1,0 +1,71 @@
+##################################################################################################
+# Weather service
+##################################################################################################
+apiVersion: v1
+kind: Service
+metadata:
+  name: weather
+  labels:
+    app: weather
+spec:
+  ports:
+  - port: 8080
+    name: http
+  selector:
+    app: weather
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: weather-v1
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: weather
+        version: v1
+    spec:
+      containers:
+      - name: weather
+        image: andrewrest/vertx-weather:weather-0.0.1
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 8080
+---
+
+##################################################################################################
+# Weather service
+##################################################################################################
+apiVersion: v1
+kind: Service
+metadata:
+  name: info
+  labels:
+    app: info
+spec:
+  ports:
+  - port: 8081
+    name: http
+  selector:
+    app: info
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: info-v1
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: info
+        version: v1
+    spec:
+      containers:
+      - name: info
+        image: andrewrest/vertx-info:info-0.0.2
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 8081
+---
