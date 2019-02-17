@@ -11,7 +11,7 @@ User need to get information for entertaiment section.
 User will get 1 random interesting fact and weather.
 
 ## Communication model
-
+![image](images/vertex.png)
 
 
 ```bash
