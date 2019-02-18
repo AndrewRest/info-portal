@@ -11,7 +11,7 @@ User need to get information for entertainment section.
 User will get 1 random interesting fact and weather.
 
 ### Domain model
-![untitled diagram 2](https://user-images.githubusercontent.com/12434689/52966849-63edb580-33b9-11e9-9a19-e642d3258c89.png)
+![untitled diagram 3](https://user-images.githubusercontent.com/12434689/52966951-a616f700-33b9-11e9-9f8d-5e126b776c1b.png)
 
 ## Communication model
 ![vertx](https://user-images.githubusercontent.com/12434689/52917359-815c4a00-32fb-11e9-8ba9-a27680ea99d8.png)
