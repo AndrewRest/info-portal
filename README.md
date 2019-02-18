@@ -17,6 +17,9 @@ User flow:
 #User call Info service for getting info for entertainment section
 #Info service call Weather service to return the current temperature and short description
 
+### Sequence diagram
+![untitled diagram 1](https://user-images.githubusercontent.com/12434689/52966519-8d5a1180-33b8-11e9-9663-f1f4ea4ed241.png)
+
 ## Technical details
 
 ### Stack
