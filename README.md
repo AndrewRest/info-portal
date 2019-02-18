@@ -2,7 +2,7 @@
 
 ## Requirements
 
-- Microservices developed on top of Vert.x
+- Microservices are developed on top of Vert.x
 - Communication between services should exist
 - Orchestartion should be done via Minikube with Istio/Envoy
 
